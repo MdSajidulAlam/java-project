@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wallet</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b00ced0a70.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- Heading Section -->
+    <header class="w-4/5 mx-auto">
+        <h1 class="text-5xl text-center text-cyan-700 mt-8">Digital Wallet<i class="fa-solid fa-wallet ml-5"></i></h1>
+    </header>
+    <!-- Input Field -->
+    <main class="w-4/5 mx-auto mt-8">
+        <div class="grid lg:grid-cols-2 sm:grid-cols-1 lg:gap-4 sm:gap-2">
+            <div class="w-full">
+                <img class="" src="./images/20943910.jpg" alt="">
+            </div>
+            <div class="bg-slate-100 p-5 drop-shadow-2xl rounded-lg">
+                <div>
+                    <h1 class="my-4 text-3xl text-center">Income</h1>
+                </div>
+                <div class="flex lg:justify-between lg:w-4/6 lg:mx-auto sm:w-2/5">
+                    <h3 class="flex justify-center items-center">Income: </h3>
+                    <input type="text" class="bg-slate-300 p-2 rounded" name="" placeholder="Enter your amount"
+                        id="income-field">
+                </div>
+                <div class="mt-4">
+                    <h1 class=" text-3xl text-center">Expense</h1>
+                </div>
+                <div class="flex justify-between mt-4 lg:w-4/6 lg:mx-auto sm:w-2/5">
+                    <h3 class="flex justify-center items-center">Food: </h3>
+                    <input type="text" class="bg-slate-300 p-2 rounded" name="" placeholder="Enter amount"
+                        id="food-field">
+                </div>
+                <div class="flex justify-between mt-4 lg:w-4/6 lg:mx-auto sm:w-2/5">
+                    <h3 class="flex justify-center items-center">Rent: </h3>
+                    <input type="text" class="bg-slate-300 p-2 rounded" name="" placeholder="Enter amount"
+                        id="rent-field">
+                </div>
+                <div class="flex justify-between mt-4 lg:w-4/6 lg:mx-auto sm:w-2/5">
+                    <h3 class="flex justify-center items-center">Clothes: </h3>
+                    <input type="text" class="bg-slate-300 p-2 rounded" name="" placeholder="Enter amount"
+                        id="cloth-field">
+                </div>
+                <div class="flex justify-center">
+                    <button id="calculate-btn"
+                        class="bg-indigo-500 text-white rounded-lg mt-4 lg:px-4 lg:py-2 lg:ml-5 sm:px-4 sm:py-3">Calculate</button>
+                </div>
+                <div class="text-center">
+                    <h2 class="mt-4 text-lg">Total Expenses: <span id="total-expense" class="font-bold">00</span></h2>
+                </div>
+                <div class="text-center">
+                    <h2 class="mt-4 text-lg">Current Balance: <span id="balance" class="font-bold">00</span></h2>
+                </div>
+                <div class="flex mt-4 lg:w-3/4 lg:mx-auto">
+                    <div class="flex justify-around">
+                        <h3 class="flex justify-center items-center">Save: </h3>
+                        <input type="text" class="bg-slate-300 p-2 rounded w-2/4 " name="" placeholder=""
+                            id="save-field">
+                    </div>
+
+                    <div class="flex justify-center items-center">
+                        <i class="fa-solid fa-percent"></i>
+                    </div>
+                    <button id="save-btn" class="bg-indigo-500 text-white rounded-lg ml-5 lg:px-4">Save</button>
+                </div>
+                <div class="text-center">
+                    <h2 class="mt-4 text-lg">Saving Amount: <span id="save-amount" class="font-bold">00</span></h2>
+                </div>
+                <div class="text-center">
+                    <h2 class="mt-4 text-lg">Remaining Balance: <span id="remaining-balance" class="font-bold">00</span>
+                    </h2>
+                </div>
+
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Script File -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
