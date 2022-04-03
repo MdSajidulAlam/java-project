@@ -17,7 +17,10 @@ function field(input) {
 function updateBalance() {
     const income = field('income')
     const totalExpense = field('food') + field('rent') + field('cloth')
-
+    if (income < totalExpense) {
+        alert('Your income amount is less then income')
+        return
+    }
     const totalExpenseAmount = document.getElementById('total-expense').innerText = totalExpense || 0
     const updatedBalance = document.getElementById('balance').innerText = (income - totalExpenseAmount) || 0
     return updatedBalance
@@ -29,6 +32,8 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
     const income = field('income')
     const totalExpense = field('food') + field('rent') + field('cloth')
     if (income < totalExpense) {
+        const income = document.getElementById('income-field')
+        income.value = 0
         const foodCost = document.getElementById('food-field')
         foodCost.value = 0
         const rentCost = document.getElementById('rent-field')
