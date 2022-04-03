@@ -18,7 +18,6 @@ function updateBalance() {
     const income = field('income')
     const totalExpense = field('food') + field('rent') + field('cloth')
     if (income < totalExpense) {
-        alert('Your income amount is less then income')
         return
     }
     const totalExpenseAmount = document.getElementById('total-expense').innerText = totalExpense || 0
